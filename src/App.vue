@@ -6,7 +6,7 @@
         <footer>
             <nav>
                 <router-link tag="div" :to="{name: 'Home'}" exact>
-                    <i class="fa fa-address-book "></i>
+                    <i class="fa fa-address-=+++ "></i>
                     <span>首页</span>
                 </router-link>
                 <router-link tag="div" :to="{name: 'Category'}">
@@ -34,7 +34,7 @@
 </script>
 
 <style lang="scss">
-    $theme-color: #2396fd;
+    $theme-color: #35a5eb;
     *,*::before,*::after {
         box-sizing: border-box;
     }
@@ -53,6 +53,7 @@
                 & > header {
                     width: 100%;
                     height: 40px;
+                    line-height: 40px;
                     background-color: $theme-color;
                     text-align: center;
                     color: #ffffff;
@@ -68,11 +69,14 @@
         }
         & > footer {
             height: 44px;
+            line-height: 44px;
+            color: white;
             background-color: $theme-color;
             nav {
                 display: flex;
+                justify-content: space-around;
                 div {
-                    padding: 6px;
+                   // padding: 6px;
                 }
             }
         }
